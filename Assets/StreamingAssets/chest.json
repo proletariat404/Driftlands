@@ -1,0 +1,16 @@
+[
+  {
+    "chest_id": 1,
+    "chest_type": 1,
+    "item_ids": "[1,2,3,4,5]",
+    "weights": "[2,2,2,2,2]",
+    "amount_range": "[100,100,100,100,100]"
+  },
+  {
+    "chest_id": 2,
+    "chest_type": 2,
+    "item_ids": "[1,2,3,4,5]",
+    "weights": "[2,2,2,2,2]",
+    "amount_range": "[100,100,100,100,100]"
+  }
+]

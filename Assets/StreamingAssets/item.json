@@ -1,0 +1,27 @@
+[
+  {
+    "item_id": 1,
+    "item_name": "盘缠",
+    "item_type": 1
+  },
+  {
+    "item_id": 2,
+    "item_name": "宝石",
+    "item_type": 2
+  },
+  {
+    "item_id": 3,
+    "item_name": "秘籍",
+    "item_type": 3
+  },
+  {
+    "item_id": 4,
+    "item_name": "异兽蛋",
+    "item_type": 4
+  },
+  {
+    "item_id": 5,
+    "item_name": "法宝碎片",
+    "item_type": 5
+  }
+]
