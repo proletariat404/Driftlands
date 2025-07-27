@@ -1,100 +1,128 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using Pathfinding;
+using UnityEngine.EventSystems; // âœ… ç”¨äºåˆ¤æ–­æ˜¯å¦ç‚¹åœ¨ UI ä¸Š
 
 [RequireComponent(typeof(PlayerStats))]
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 4f;
+	public float speed = 4f;
 
-    private Seeker seeker;
-    private Path path;
-    private int currentWaypoint = 0;
-    private bool reachedEndOfPath = false;
+	private Seeker seeker;
+	private Path path;
+	private int currentWaypoint = 0;
+	private bool reachedEndOfPath = false;
 
-    private Rigidbody2D rb;
-    private PlayerStats stats;
+	private Rigidbody2D rb;
+	private PlayerStats stats;
 
-    private float distanceSinceLastStaminaLoss = 0f;
+	private float distanceSinceLastStaminaLoss = 0f;
 
-    void Start()
-    {
-        seeker = GetComponent<Seeker>();
-        rb = GetComponent<Rigidbody2D>();
-        stats = GetComponent<PlayerStats>();
-    }
+	void Start()
+	{
+		seeker = GetComponent<Seeker>();
+		rb = GetComponent<Rigidbody2D>();
+		stats = GetComponent<PlayerStats>();
+	}
 
-    void Update()
-    {
-        Collider2D hit = Physics2D.OverlapCircle(transform.position, 0.1f, LayerMask.GetMask("Obstacle"));
-        
+	void Update()
+	{
+		// âœ… å¿½ç•¥ç‚¹å‡» UI ä¸Šçš„æ“ä½œï¼ˆå…¼å®¹é¼ æ ‡å’Œæ‰‹æœºï¼‰
+		if (IsPointerOverUI()) return;
 
-        if (Input.GetMouseButtonDown(0))
+#if UNITY_EDITOR || UNITY_STANDALONE
+		if (Input.GetMouseButtonDown(0))
+		{
+			TryStartMovement(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+		}
+#elif UNITY_ANDROID || UNITY_IOS
+        if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
-            if (stats.IsStaminaDepleted())
-            {
-                Debug.Log("ÌåÁ¦²»×ã£¬ÎŞ·¨¿ªÊ¼ÒÆ¶¯£¡");
-                return;
-            }
-
-            Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            mouseWorldPos.z = 0;
-
-            seeker.StartPath(rb.position, mouseWorldPos, OnPathComplete);
+            TryStartMovement(Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position));
         }
-    }
+#endif
+	}
 
-    void FixedUpdate()
-    {
-        if (path == null || currentWaypoint >= path.vectorPath.Count || stats.IsStaminaDepleted())
-            return;
+	private void TryStartMovement(Vector3 targetWorldPos)
+	{
+		if (stats.IsStaminaDepleted())
+		{
+			Debug.Log("ä½“åŠ›ä¸è¶³ï¼Œæ— æ³•å¼€å§‹ç§»åŠ¨ï¼");
+			return;
+		}
 
-        reachedEndOfPath = false;
+		targetWorldPos.z = 0;
+		seeker.StartPath(rb.position, targetWorldPos, OnPathComplete);
+	}
 
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        Vector2 velocity = direction * speed * Time.fixedDeltaTime;
-        Vector2 nextPosition = rb.position + velocity;
+	void FixedUpdate()
+	{
+		if (path == null || currentWaypoint >= path.vectorPath.Count || stats.IsStaminaDepleted())
+			return;
 
-        float distanceMoved = Vector2.Distance(rb.position, nextPosition);
-        distanceSinceLastStaminaLoss += distanceMoved;
+		reachedEndOfPath = false;
 
-        if (distanceSinceLastStaminaLoss >= 1f)
+		Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+		Vector2 velocity = direction * speed * Time.fixedDeltaTime;
+		Vector2 nextPosition = rb.position + velocity;
+
+		float distanceMoved = Vector2.Distance(rb.position, nextPosition);
+		distanceSinceLastStaminaLoss += distanceMoved;
+
+		if (distanceSinceLastStaminaLoss >= 1f)
+		{
+			int wholeUnits = Mathf.FloorToInt(distanceSinceLastStaminaLoss);
+			bool success = stats.ConsumeStamina(wholeUnits);
+			if (success)
+			{
+				distanceSinceLastStaminaLoss -= wholeUnits;
+			}
+			else
+			{
+				Debug.Log("ä½“åŠ›è€—å°½ï¼Œåœæ­¢ç§»åŠ¨ï¼");
+				path = null;
+				return;
+			}
+		}
+
+		rb.MovePosition(nextPosition);
+
+		float distanceToWaypoint = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+		if (distanceToWaypoint < 0.1f)
+		{
+			currentWaypoint++;
+		}
+	}
+
+	public void OnPathComplete(Path p)
+	{
+		if (!p.error)
+		{
+			path = p;
+			currentWaypoint = 0;
+		}
+	}
+
+	public void SetControlEnabled(bool enabled)
+	{
+		this.enabled = enabled;
+	}
+
+	/// <summary>
+	/// åˆ¤æ–­å½“å‰ç‚¹å‡»æˆ–è§¦æ‘¸æ˜¯å¦åœ¨ UI ä¸Š
+	/// </summary>
+	private bool IsPointerOverUI()
+	{
+#if UNITY_EDITOR || UNITY_STANDALONE
+		return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
+#elif UNITY_ANDROID || UNITY_IOS
+        if (Input.touchCount > 0)
         {
-            int wholeUnits = Mathf.FloorToInt(distanceSinceLastStaminaLoss);
-            bool success = stats.ConsumeStamina(wholeUnits);
-            if (success)
-            {
-                distanceSinceLastStaminaLoss -= wholeUnits;
-            }
-            else
-            {
-                Debug.Log("ÌåÁ¦ºÄ¾¡£¬Í£Ö¹ÒÆ¶¯£¡");
-                path = null;
-                return;
-            }
+            Touch touch = Input.GetTouch(0);
+            return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject(touch.fingerId);
         }
-
-        rb.MovePosition(nextPosition);
-
-        float distanceToWaypoint = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
-        if (distanceToWaypoint < 0.1f)
-        {
-            currentWaypoint++;
-        }
-    }
-
-    public void OnPathComplete(Path p)
-    {
-        if (!p.error)
-        {
-            path = p;
-            currentWaypoint = 0;
-        }
-    }
-    public void SetControlEnabled(bool enabled)
-    {
-        // ¿ÉÒÔ°´ÄãµÄÂß¼­¿ØÖÆÒÆ¶¯ÊäÈë
-        this.enabled = enabled;
-        // »òÕßµ¥¶ÀÉè¶¨Ò»¸ö allowMove ±êÖ¾Î»
-    }
-
+        return false;
+#else
+        return false;
+#endif
+	}
 }

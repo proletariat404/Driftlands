@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 using System.IO;
@@ -13,6 +12,9 @@ public class UIHintManager : MonoBehaviour
 	public TextMeshProUGUI hintText;
 	public float fadeDuration = 0.2f;
 
+	[Header("提示默认持续时间（秒）")]
+	public float defaultHintDuration = 2f;
+
 	private Coroutine hintRoutine;
 
 	void Awake()
@@ -24,13 +26,18 @@ public class UIHintManager : MonoBehaviour
 		}
 		Instance = this;
 
-		// 初始隐藏
 		hintCanvasGroup.alpha = 0f;
 		hintCanvasGroup.interactable = false;
 		hintCanvasGroup.blocksRaycasts = false;
 	}
 
-	public void ShowHint(string message, float duration = 2f)
+	// 调用时不传时间，使用默认持续时间
+	public void ShowHint(string message)
+	{
+		ShowHint(message, defaultHintDuration);
+	}
+
+	public void ShowHint(string message, float duration)
 	{
 		if (hintRoutine != null)
 			StopCoroutine(hintRoutine);
@@ -40,6 +47,10 @@ public class UIHintManager : MonoBehaviour
 
 	private IEnumerator ShowHintRoutine(string message, float duration)
 	{
+		// 禁用输入
+		if (GameInputManager.Instance != null)
+			GameInputManager.Instance.DisableInput();
+
 		hintText.text = message;
 
 		// 淡入
@@ -50,6 +61,10 @@ public class UIHintManager : MonoBehaviour
 
 		// 淡出
 		yield return StartCoroutine(FadeCanvasGroup(hintCanvasGroup, 1f, 0f, fadeDuration));
+
+		// 启用输入
+		if (GameInputManager.Instance != null)
+			GameInputManager.Instance.EnableInput();
 	}
 
 	private IEnumerator FadeCanvasGroup(CanvasGroup cg, float from, float to, float time)
@@ -64,7 +79,7 @@ public class UIHintManager : MonoBehaviour
 		cg.alpha = to;
 	}
 
-	// 新增代码：读取并显示提示文本
+	// 读取并显示提示文本示例（可删）
 	public void LoadHintData(string fileName)
 	{
 		string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
@@ -74,7 +89,6 @@ public class UIHintManager : MonoBehaviour
 			string jsonContent = File.ReadAllText(filePath);
 			HintData[] hintDataArray = JsonUtility.FromJson<HintDataArray>(jsonContent).hints;
 
-			// 假设要显示第一个提示
 			if (hintDataArray.Length > 0)
 			{
 				ShowHint(hintDataArray[0].HintText, hintDataArray[0].Duration);

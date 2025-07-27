@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "E:\\Dream\\Driftlands\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\hiddenitem\\treasurechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hiddenitem\\treasurechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|e:\\dream\\driftlands\\assets\\scripts\\player\\tribesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\tribesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\hiddenitem\\hiddenitemevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|e:\\dream\\driftlands\\assets\\scripts\\hiddenitem\\hiddenitemevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hiddenitem\\hiddenitemevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\common\\mapeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\mapeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\hiddenitem\\treasurechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hiddenitem\\treasurechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\data\\chestdropdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,7 +31,7 @@
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\hiddenhintdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|e:\\dream\\driftlands\\assets\\scripts\\common\\dropmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\common\\dropmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\dropmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -29,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\common\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\common\\mapeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\mapeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\data\\gamedatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -48,10 +56,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,41 +102,121 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TreasureChest.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAQAAAA",
+              "Title": "TribeSystem.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\TribeSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\TribeSystem.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\TribeSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\TribeSystem.cs",
+              "ViewState": "AQIAAMMAAAAAAAAAAAAawNEAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T07:25:58.18Z",
+              "WhenOpened": "2025-07-27T15:34:42.044Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AstarMath.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
+              "RelativeDocumentMoniker": "Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
+              "RelativeToolTip": "Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T02:08:12.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AstarPath.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
+              "RelativeDocumentMoniker": "Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
+              "RelativeToolTip": "Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
+              "ViewState": "AgIAAPkHAAAAAAAAAADwv3MIAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T07:48:14.172Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "NavMeshSurface.cs",
+              "DocumentMoniker": "D:\\Driftlands\\Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs",
+              "ToolTip": "D:\\Driftlands\\Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAgwBYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T07:26:39.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T06:46:30.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Interactable.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\Interactable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Interactable.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\Interactable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Common\\Interactable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T08:48:12.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HiddenHintDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAIwBoAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T07:09:53.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameDataManager.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\GameDataManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\GameDataManager.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\GameDataManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\GameDataManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T07:04:02.916Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ChestDropDatabase.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ChestDropDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\ChestDropDatabase.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ChestDropDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\ChestDropDatabase.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAIwFwAAAAyAAAA",
+              "Title": "MapEventTrigger.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\MapEventTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\MapEventTrigger.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\MapEventTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Common\\MapEventTrigger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T07:11:37.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-25T07:51:58.046Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ItemDatabase.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ItemDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\ItemDatabase.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ItemDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\ItemDatabase.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAIwCoAAAAWAAAA",
+              "DocumentIndex": 3,
+              "Title": "PlayerStats.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStats.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerStats.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStats.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAowKcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T07:10:49.593Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-25T05:56:28.333Z"
             },
             {
               "$type": "Document",
@@ -149,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "DropManager.cs",
               "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\DropManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\DropManager.cs",
@@ -157,108 +241,47 @@
               "RelativeToolTip": "Assets\\Scripts\\Common\\DropManager.cs",
               "ViewState": "AQIAAFEAAAAAAAAAAAAIwFwAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T18:03:39.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AstarMath.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
-              "RelativeDocumentMoniker": "Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
-              "RelativeToolTip": "Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T02:08:12.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AstarPath.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
-              "RelativeDocumentMoniker": "Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
-              "RelativeToolTip": "Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
-              "ViewState": "AgIAAPkHAAAAAAAAAADwv3MIAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T07:48:14.172Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "NavMeshSurface.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAgwBYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T07:26:39.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T06:46:30.038Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Interactable.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\Interactable.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Interactable.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\Interactable.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Common\\Interactable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T08:48:12.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HiddenHintDatabase.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAIwBoAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T07:09:53.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-26T18:03:39.408Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "GameDataManager.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\GameDataManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\GameDataManager.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\GameDataManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\GameDataManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
+              "Title": "ItemDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ItemDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\ItemDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ItemDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\ItemDatabase.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAIwCoAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T07:04:02.916Z"
+              "WhenOpened": "2025-07-27T07:10:49.593Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MapEventTrigger.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\MapEventTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\MapEventTrigger.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\MapEventTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Common\\MapEventTrigger.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAfAAAA",
+              "DocumentIndex": 5,
+              "Title": "ChestDropDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ChestDropDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\ChestDropDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ChestDropDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\ChestDropDatabase.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAIwFwAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T07:51:58.046Z"
+              "WhenOpened": "2025-07-27T07:11:37.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
+              "Title": "TreasureChest.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T07:25:58.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "UIHintManager.cs",
               "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\UI\\UIHintManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIHintManager.cs",
@@ -270,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "TilemapBoundsFixer.cs",
               "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Camera\\TilemapBoundsFixer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\TilemapBoundsFixer.cs",
@@ -282,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "TreasureChest.cs",
               "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\TreasureChest.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\TreasureChest.cs",
@@ -294,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "LayerControlledGridGraph.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridGraph.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridGraph.cs",
@@ -303,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "LayerControlledGridManager.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridManager.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridManager.cs",
@@ -312,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IntegratedLayerController.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Manage\\IntegratedLayerController.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Manage\\IntegratedLayerController.cs",
@@ -321,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CameraFollow.cs",
               "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Camera\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraFollow.cs",
@@ -334,18 +357,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "PlayerStats.cs",
-              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStats.cs",
-              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerStats.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStats.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvyAAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T05:56:28.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "ExcelToCsvWindow.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Editor\\ExcelToCsvWindow.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Editor\\ExcelToCsvWindow.cs",

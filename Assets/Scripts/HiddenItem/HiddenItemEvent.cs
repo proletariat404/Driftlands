@@ -7,11 +7,14 @@ public class HiddenItemEvent : MapEventTrigger
 	private Collider2D col;
 
 	[Header("提示 ID")]
-	public int hintId = 1; // 在 Inspector 指定要显示的提示 ID
+	public int hintId = 1;
 
 	[Header("显现效果")]
 	public float revealDuration = 2f;
 	public float flickerSpeed = 0.1f;
+
+	[Header("UI提示持续时间")]
+	public float uiHintDuration = 2f;
 
 	private PlayerController playerController;
 
@@ -21,7 +24,7 @@ public class HiddenItemEvent : MapEventTrigger
 		spriteRenderer = GetComponent<SpriteRenderer>();
 		col = GetComponent<Collider2D>();
 		if (spriteRenderer != null)
-			spriteRenderer.enabled = false; // 初始隐藏
+			spriteRenderer.enabled = false;
 		if (col != null)
 			col.enabled = false;
 	}
@@ -31,7 +34,7 @@ public class HiddenItemEvent : MapEventTrigger
 		PlayerStats stats = player.GetComponent<PlayerStats>();
 		if (stats == null || triggered) return;
 
-		int perception = stats.GetPerception(); // 感知值
+		int perception = stats.GetPerception();
 		float chance = Random.Range(0f, 100f);
 
 		if (chance < perception)
@@ -39,13 +42,12 @@ public class HiddenItemEvent : MapEventTrigger
 			triggered = true;
 			playerController = player.GetComponent<PlayerController>();
 			if (playerController != null)
-				playerController.SetControlEnabled(false); // 禁止移动
+				playerController.SetControlEnabled(false);
 
-			// ✅ 改为通过 HiddenHintDatabase 获取提示
 			var hint = GameDataManager.Instance.HiddenHints.GetHintById(hintId);
 			if (hint != null && UIHintManager.Instance != null)
 			{
-				UIHintManager.Instance.ShowHint(hint.HintText, hint.Duration);
+				UIHintManager.Instance.ShowHint(hint.HintText, uiHintDuration);
 			}
 
 			StartCoroutine(RevealSequence());
@@ -66,7 +68,6 @@ public class HiddenItemEvent : MapEventTrigger
 			yield return new WaitForSeconds(flickerSpeed);
 		}
 
-		// 渐变到完全显现
 		float fadeTime = 0.5f;
 		elapsed = 0f;
 		while (elapsed < fadeTime)
@@ -82,6 +83,6 @@ public class HiddenItemEvent : MapEventTrigger
 			col.enabled = true;
 
 		if (playerController != null)
-			playerController.SetControlEnabled(true); // 恢复移动
+			playerController.SetControlEnabled(true);
 	}
 }
