@@ -1,27 +1,72 @@
 [
   {
-    "item_id": 1,
+    "item_id": 1001,
     "item_name": "盘缠",
-    "item_type": 1
+    "item_type": 1,
+    "type_name": "钱币",
+    "weight": 1
   },
   {
-    "item_id": 2,
-    "item_name": "宝石",
-    "item_type": 2
+    "item_id": 2001,
+    "item_name": "红宝石",
+    "item_type": 2,
+    "type_name": "矿物",
+    "weight": 1
   },
   {
-    "item_id": 3,
-    "item_name": "秘籍",
-    "item_type": 3
+    "item_id": 2002,
+    "item_name": "绿宝石",
+    "item_type": 2,
+    "type_name": "矿物",
+    "weight": 1
   },
   {
-    "item_id": 4,
-    "item_name": "异兽蛋",
-    "item_type": 4
+    "item_id": 2003,
+    "item_name": "蓝宝石",
+    "item_type": 2,
+    "type_name": "矿物",
+    "weight": 1
   },
   {
-    "item_id": 5,
-    "item_name": "法宝碎片",
-    "item_type": 5
+    "item_id": 3001,
+    "item_name": "皇血草",
+    "item_type": 3,
+    "type_name": "草药",
+    "weight": 1
+  },
+  {
+    "item_id": 3002,
+    "item_name": "地根草",
+    "item_type": 3,
+    "type_name": "草药",
+    "weight": 1
+  },
+  {
+    "item_id": 4001,
+    "item_name": "麒麟蛋",
+    "item_type": 4,
+    "type_name": "异兽蛋",
+    "weight": 1
+  },
+  {
+    "item_id": 4002,
+    "item_name": "貔貅蛋",
+    "item_type": 4,
+    "type_name": "异兽蛋",
+    "weight": 1
+  },
+  {
+    "item_id": 5001,
+    "item_name": "金箍棒碎片",
+    "item_type": 5,
+    "type_name": "法宝",
+    "weight": 1
+  },
+  {
+    "item_id": 5002,
+    "item_name": "乾坤圈碎片",
+    "item_type": 5,
+    "type_name": "法宝",
+    "weight": 1
   }
 ]

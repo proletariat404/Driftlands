@@ -1,0 +1,30 @@
+[
+  {
+    "ID": 1,
+    "HintText": "你发现了一个黄金宝箱！",
+    "Duration": 2.5,
+    "Type": 1,
+    "Column4": ""
+  },
+  {
+    "ID": 2,
+    "HintText": "你发现了一个普通宝箱！",
+    "Duration": 2.5,
+    "Type": 1,
+    "Column4": ""
+  },
+  {
+    "ID": 3,
+    "HintText": "你发现了一个隐藏矿物！",
+    "Duration": 2.5,
+    "Type": 2,
+    "Column4": ""
+  },
+  {
+    "ID": 4,
+    "HintText": "你发现了一个隐藏草药！",
+    "Duration": 2.5,
+    "Type": 3,
+    "Column4": ""
+  }
+]

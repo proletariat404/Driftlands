@@ -1,8 +1,7 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using System.IO;
 
 public class DropManager : MonoBehaviour
 {
@@ -11,60 +10,83 @@ public class DropManager : MonoBehaviour
 	public string itemTableFileName = "item.json";
 	public string chestTableFileName = "chest.json";
 
-	private Dictionary<int, ItemData> itemDict = new();
-	private Dictionary<int, ChestDropData> chestDict = new();
+	private ItemDatabase itemDatabase;
+	private ChestDropDatabase chestDatabase;
 
 	private void Awake()
 	{
 		if (Instance != null) { Destroy(gameObject); return; }
 		Instance = this;
 
-		LoadAllData();
+		itemDatabase = new ItemDatabase(itemTableFileName);
+		chestDatabase = new ChestDropDatabase(chestTableFileName);
 	}
 
-	void LoadAllData()
-	{
-		// ·��ƴ��
-		string itemPath = Path.Combine(Application.streamingAssetsPath, itemTableFileName);
-		string chestPath = Path.Combine(Application.streamingAssetsPath, chestTableFileName);
-
-		// ��ȡ�ļ�
-		string itemJson = File.ReadAllText(itemPath);
-		string chestJson = File.ReadAllText(chestPath);
-
-		// ����
-		var itemList = JsonUtility.FromJson<ItemListWrapper>("{\"items\":" + itemJson + "}").items;
-		foreach (var item in itemList)
-			itemDict[item.item_id] = item;
-
-		var chestList = JsonUtility.FromJson<ChestListWrapper>("{\"chests\":" + chestJson + "}").chests;
-		foreach (var chest in chestList)
-			chestDict[chest.chest_id] = chest;
-	}
-
+	// ✅ 宝箱掉落，按权重随机，数量随机区间
 	public List<DropResult> GetDropByChestId(int chestId)
 	{
-		if (!chestDict.TryGetValue(chestId, out var chest)) return null;
+		var chestData = chestDatabase.GetChestById(chestId);
+		if (chestData == null)
+		{
+			Debug.LogWarning($"没有找到宝箱数据，ID: {chestId}");
+			return null;
+		}
 
-		var itemIds = ParseIntArray(chest.item_ids);
-		var weights = ParseIntArray(chest.weights);
-		var amounts = ParseIntArray(chest.amount_range);
+		int[] weights = chestData.parsedWeights;
+		int[] itemTypes = chestData.parsedItemTypes;
+		int[][] amountRanges = chestData.parsedAmountRanges;
+
+		if (weights == null || itemTypes == null || amountRanges == null
+			|| weights.Length == 0 || itemTypes.Length == 0 || amountRanges.Length == 0)
+		{
+			Debug.LogWarning("宝箱数据解析异常");
+			return null;
+		}
 
 		int selectedIndex = GetRandomIndexByWeight(weights);
-		int itemId = itemIds[selectedIndex];
-		int amount = amounts[selectedIndex];
+		int itemType = itemTypes[selectedIndex];
 
-		var item = itemDict.TryGetValue(itemId, out var itemData) ? itemData : null;
+		int[] range = amountRanges[selectedIndex];
+		int amount = UnityEngine.Random.Range(range[0], range[1] + 1);
 
-		return new List<DropResult> {
-			new DropResult { itemData = item, amount = amount }
-		};
+		var drop = GetRandomDropByItemType(itemType, amount);
+		if (drop == null)
+		{
+			Debug.LogWarning($"物品类型{itemType}没有对应物品");
+			return null;
+		}
+
+		return new List<DropResult> { drop };
 	}
 
-	int[] ParseIntArray(string raw) =>
-		raw.Trim('[', ']').Split(',').Select(s => int.Parse(s)).ToArray();
+	// ✅ 按物品类型随机掉落（用item.weight作为权重）
+	public DropResult GetRandomDropByItemType(int itemType, int amount = 1)
+	{
+		var items = itemDatabase.GetItemsByType(itemType);
+		if (items == null || items.Count == 0) return null;
 
-	int GetRandomIndexByWeight(int[] weights)
+		int totalWeight = items.Sum(i => i.weight);
+		int rand = UnityEngine.Random.Range(0, totalWeight);
+		int acc = 0;
+
+		foreach (var item in items)
+		{
+			acc += item.weight;
+			if (rand < acc)
+			{
+				return new DropResult
+				{
+					itemData = item,
+					amount = amount
+				};
+			}
+		}
+
+		// 兜底返回最后一个
+		return new DropResult { itemData = items.Last(), amount = amount };
+	}
+
+	private int GetRandomIndexByWeight(int[] weights)
 	{
 		int total = weights.Sum();
 		int rand = UnityEngine.Random.Range(0, total);
@@ -77,30 +99,9 @@ public class DropManager : MonoBehaviour
 		return weights.Length - 1;
 	}
 
-	[Serializable] class ItemListWrapper { public List<ItemData> items; }
-	[Serializable] class ChestListWrapper { public List<ChestDropData> chests; }
-
-	[Serializable]
-	public class ItemData
-	{
-		public int item_id;
-		public string item_name;
-		public int item_type;
-	}
-
-	[Serializable]
-	public class ChestDropData
-	{
-		public int chest_id;
-		public int chest_type;
-		public string item_ids;      // "[1,2,3]"
-		public string weights;       // "[2,2,2]"
-		public string amount_range;  // "[100,100,100]"
-	}
-
 	public class DropResult
 	{
-		public ItemData itemData;
+		public ItemDatabase.ItemData itemData;
 		public int amount;
 	}
 }
