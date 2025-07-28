@@ -1,119 +1,118 @@
 ﻿using UnityEngine;
 using Pathfinding;
-using UnityEngine.EventSystems; // ✅ 用于判断是否点在 UI 上
+using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(PlayerStats))]
 public class PlayerController : MonoBehaviour
 {
-	public float speed = 4f;
+    public float speed = 4f;
 
-	private Seeker seeker;
-	private Path path;
-	private int currentWaypoint = 0;
-	private bool reachedEndOfPath = false;
+    private Seeker seeker;
+    private Path path;
+    private int currentWaypoint = 0;
+    private bool reachedEndOfPath = false;
 
-	private Rigidbody2D rb;
-	private PlayerStats stats;
+    private Rigidbody2D rb;
+    private PlayerStats stats;
 
-	private float distanceSinceLastStaminaLoss = 0f;
+    private float distanceSinceLastStaminaLoss = 0f;
 
-	void Start()
-	{
-		seeker = GetComponent<Seeker>();
-		rb = GetComponent<Rigidbody2D>();
-		stats = GetComponent<PlayerStats>();
-	}
+    void Start()
+    {
+        seeker = GetComponent<Seeker>();
+        rb = GetComponent<Rigidbody2D>();
+        stats = GetComponent<PlayerStats>();
+    }
 
-	void Update()
-	{
-		// ✅ 忽略点击 UI 上的操作（兼容鼠标和手机）
-		if (IsPointerOverUI()) return;
+    void Update()
+    {
+        if (IsPointerOverUI()) return;
 
 #if UNITY_EDITOR || UNITY_STANDALONE
-		if (Input.GetMouseButtonDown(0))
-		{
-			TryStartMovement(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-		}
+        if (Input.GetMouseButtonDown(0))
+        {
+            TryStartMovement(Camera.main.ScreenToWorldPoint(Input.mousePosition));
+        }
 #elif UNITY_ANDROID || UNITY_IOS
         if (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began)
         {
             TryStartMovement(Camera.main.ScreenToWorldPoint(Input.GetTouch(0).position));
         }
 #endif
-	}
+    }
 
-	private void TryStartMovement(Vector3 targetWorldPos)
-	{
-		if (stats.IsStaminaDepleted())
-		{
-			Debug.Log("体力不足，无法开始移动！");
-			return;
-		}
+    private void TryStartMovement(Vector3 targetWorldPos)
+    {
+        if (stats.IsStaminaDepleted())
+        {
+            Debug.Log("体力不足，无法开始移动！");
+            return;
+        }
 
-		targetWorldPos.z = 0;
-		seeker.StartPath(rb.position, targetWorldPos, OnPathComplete);
-	}
+        targetWorldPos.z = 0;
+        seeker.StartPath(rb.position, targetWorldPos, OnPathComplete);
+    }
 
-	void FixedUpdate()
-	{
-		if (path == null || currentWaypoint >= path.vectorPath.Count || stats.IsStaminaDepleted())
-			return;
+    void FixedUpdate()
+    {
+        if (path == null || currentWaypoint >= path.vectorPath.Count || stats.IsStaminaDepleted())
+            return;
 
-		reachedEndOfPath = false;
+        reachedEndOfPath = false;
 
-		Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-		Vector2 velocity = direction * speed * Time.fixedDeltaTime;
-		Vector2 nextPosition = rb.position + velocity;
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+        Vector2 velocity = direction * speed * Time.fixedDeltaTime;
+        Vector2 nextPosition = rb.position + velocity;
 
-		float distanceMoved = Vector2.Distance(rb.position, nextPosition);
-		distanceSinceLastStaminaLoss += distanceMoved;
+        float distanceMoved = Vector2.Distance(rb.position, nextPosition);
+        distanceSinceLastStaminaLoss += distanceMoved;
 
-		if (distanceSinceLastStaminaLoss >= 1f)
-		{
-			int wholeUnits = Mathf.FloorToInt(distanceSinceLastStaminaLoss);
-			bool success = stats.ConsumeStamina(wholeUnits);
-			if (success)
-			{
-				distanceSinceLastStaminaLoss -= wholeUnits;
-			}
-			else
-			{
-				Debug.Log("体力耗尽，停止移动！");
-				path = null;
-				return;
-			}
-		}
+        if (distanceSinceLastStaminaLoss >= 1f)
+        {
+            int wholeUnits = Mathf.FloorToInt(distanceSinceLastStaminaLoss);
 
-		rb.MovePosition(nextPosition);
+            // 每1点体力独立判定概率免扣
+            for (int i = 0; i < wholeUnits; i++)
+            {
+                bool success = stats.TryConsumeStamina(1f);
+                if (!success)
+                {
+                    Debug.Log("体力耗尽，停止移动！");
+                    path = null;
+                    return;
+                }
+            }
 
-		float distanceToWaypoint = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
-		if (distanceToWaypoint < 0.1f)
-		{
-			currentWaypoint++;
-		}
-	}
+            distanceSinceLastStaminaLoss -= wholeUnits;
+        }
 
-	public void OnPathComplete(Path p)
-	{
-		if (!p.error)
-		{
-			path = p;
-			currentWaypoint = 0;
-		}
-	}
+        rb.MovePosition(nextPosition);
 
-	public void SetControlEnabled(bool enabled)
-	{
-		this.enabled = enabled;
-	}
+        float distanceToWaypoint = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
+        if (distanceToWaypoint < 0.1f)
+        {
+            currentWaypoint++;
+        }
+    }
 
-	/// <summary>
-	/// 判断当前点击或触摸是否在 UI 上
-	/// </summary>
-	private bool IsPointerOverUI()
-	{
+    public void OnPathComplete(Path p)
+    {
+        if (!p.error)
+        {
+            path = p;
+            currentWaypoint = 0;
+        }
+    }
+
+    public void SetControlEnabled(bool enabled)
+    {
+        this.enabled = enabled;
+    }
+
+    private bool IsPointerOverUI()
+    {
 #if UNITY_EDITOR || UNITY_STANDALONE
-		return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
+        return EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
 #elif UNITY_ANDROID || UNITY_IOS
         if (Input.touchCount > 0)
         {
@@ -124,5 +123,5 @@ public class PlayerController : MonoBehaviour
 #else
         return false;
 #endif
-	}
+    }
 }
