@@ -33,16 +33,24 @@ public class PlayerController : MonoBehaviour
 		rb = GetComponent<Rigidbody2D>();
 		stats = GetComponent<PlayerStats>();
 
-		// 初始化随机事件系统
+		// 初始化随机事件系统 - 修改：添加ItemDatabase参数
 		randomEventSystem = new RandomEventSystem(
 			GameDataManager.Instance.RandomEventsWeightData,
-			GameDataManager.Instance.RandomEventsData
+			GameDataManager.Instance.RandomEventsData,
+			GameDataManager.Instance.ItemData  // 添加物品数据库
 		);
 
 		randomEventSystem.SetBaseTriggerChance(1f);  // 触发概率由PlayerController控制，这里设1
 		randomEventSystem.SetLuckValue(stats.GetLuck()); // 传入当前幸运值
 
+		// 修改：更新事件回调签名
 		randomEventSystem.OnEventTriggered += OnRandomEventTriggered;
+
+		// 设置UI的物品数据库引用
+		if (randomEventUI != null)
+		{
+			randomEventUI.SetItemDatabase(GameDataManager.Instance.ItemData);
+		}
 	}
 
 	void Update()
@@ -164,20 +172,88 @@ public class PlayerController : MonoBehaviour
 		randomEventSystem.TryTriggerEvent();
 	}
 
-	// 处理随机事件触发结果
-	private void OnRandomEventTriggered(RandomEventsDatabase.RandomEventData evt)
+	// 修改：处理随机事件触发结果 - 更新回调签名
+	private void OnRandomEventTriggered(RandomEventsDatabase.RandomEventData eventData, string fullEventText)
 	{
-		if (evt != null)
+		if (eventData != null)
 		{
-			Debug.Log($"触发事件：{evt.event_text}");
-			// 调用UI显示
-			randomEventUI?.ShowEvent(evt.event_text);
+			Debug.Log($"触发事件：{eventData.event_text}");
 
-			// TODO: 这里还可以处理奖励逻辑
+			// 方式1：使用生成的完整文本（推荐）
+			randomEventUI?.ShowEvent(fullEventText);
+
+			// 方式2：或者使用事件数据让UI自己生成文本
+			// randomEventUI?.ShowEvent(eventData);
+
+			// 处理实际的奖励/惩罚逻辑
+			ProcessEventRewards(eventData);
 		}
 		else
 		{
 			Debug.Log("未触发具体随机事件");
+		}
+	}
+
+	/// <summary>
+	/// 处理事件的实际奖励和惩罚逻辑
+	/// </summary>
+	private void ProcessEventRewards(RandomEventsDatabase.RandomEventData eventData)
+	{
+		// 处理奖励
+		if (eventData.reward_item_id > 0 && eventData.reward_amount > 0)
+		{
+			// 这里调用你的物品系统来给玩家添加物品
+			// 例如：InventoryManager.Instance.AddItem(eventData.reward_item_id, (int)eventData.reward_amount);
+			Debug.Log($"获得奖励：物品ID {eventData.reward_item_id} x{eventData.reward_amount}");
+		}
+
+		// 处理惩罚
+		if (!string.IsNullOrEmpty(eventData.penalty_id) && eventData.penalty_id != "0")
+		{
+			ProcessPenalty(eventData.penalty_id);
+		}
+	}
+
+	/// <summary>
+	/// 处理具体的惩罚效果
+	/// </summary>
+	private void ProcessPenalty(string penaltyId)
+	{
+		switch (penaltyId.ToLower())
+		{
+			case "money_loss":
+				// 扣除金钱
+				// MoneyManager.Instance.SpendMoney(100);
+				Debug.Log("损失金钱");
+				break;
+			case "health_loss":
+				// 扣除生命值
+				// stats.TakeDamage(10);
+				Debug.Log("损失生命值");
+				break;
+			case "energy_loss":
+			case "stamina_loss":
+				// 扣除体力
+				stats.TryConsumeStamina(10f);
+				Debug.Log("损失体力");
+				break;
+			case "item_loss":
+				// 丢失物品
+				// InventoryManager.Instance.RemoveRandomItem();
+				Debug.Log("丢失物品");
+				break;
+			default:
+				Debug.Log($"未知惩罚类型：{penaltyId}");
+				break;
+		}
+	}
+
+	private void OnDestroy()
+	{
+		// 取消事件订阅，防止内存泄漏
+		if (randomEventSystem != null)
+		{
+			randomEventSystem.OnEventTriggered -= OnRandomEventTriggered;
 		}
 	}
 }
