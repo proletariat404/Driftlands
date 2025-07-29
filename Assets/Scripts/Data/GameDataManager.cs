@@ -16,5 +16,6 @@ public class GameDataManager : MonoBehaviour
 		HiddenHints = new HiddenHintDatabase("hidden_hints.json");
 		ItemData = new ItemDatabase("item.json");
 		ChestData = new ChestDropDatabase("chest.json");
+
 	}
 }

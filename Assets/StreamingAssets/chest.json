@@ -1,16 +1,30 @@
 [
   {
-    "chest_id": 1,
+    "chest_id": 1001,
     "chest_type": 1,
-    "item_types": "[1,2,3,4,5]",
-    "weights": "[2,2,2,2,2]",
-    "amount_range": "[[1,100],[1,100],[1,100],[1,100],[1,100]]"
+    "item_types": "[1,4]",
+    "weights": "[2,2]",
+    "amount_range": "[[1,100],[1,100]]"
   },
   {
-    "chest_id": 2,
+    "chest_id": 1002,
+    "chest_type": 1,
+    "item_types": "[1]",
+    "weights": "[2]",
+    "amount_range": "[[1,100]]"
+  },
+  {
+    "chest_id": 2001,
     "chest_type": 2,
-    "item_types": "[1,2,3,4,5]",
-    "weights": "[2,2,2,2,2]",
-    "amount_range": "[[1,100],[1,100],[1,100],[1,100],[1,100]]"
+    "item_types": "[1,5]",
+    "weights": "[2,2]",
+    "amount_range": "[[1,100],[1,100]]"
+  },
+  {
+    "chest_id": 2002,
+    "chest_type": 2,
+    "item_types": "[1]",
+    "weights": "[2]",
+    "amount_range": "[[1,100]]"
   }
 ]

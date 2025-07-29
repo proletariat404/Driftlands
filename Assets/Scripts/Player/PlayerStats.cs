@@ -21,16 +21,23 @@ public class PlayerStats : MonoBehaviour
     public float defaultHuangDiNoStaminaChance = 0.15f;
     public int defaultYanDiPerceptionBonus = 5;
     public float defaultYanDiExtraRewardChance = 0.2f;
+    public float defaultYanDiExtraRewardMultiplier = 1.2f;  // 默认倍率1.2倍
     public int defaultChiYouSpiritualityBonus = 5;
 
     [Header("部族天赋信息")]
-    [SerializeField] public TribeType selectedTribe = TribeType.None;
+    public TribeType selectedTribe = TribeType.None;
 
-    [SerializeField, Range(0f, 1f), Tooltip("免体力移动概率 - 黄帝部族天赋")]
+    [Header("黄帝天赋 - 免体力移动概率")]
+    [Range(0f, 1f)]
     public float noStaminaMovementChance = 0f;
 
-    [SerializeField, Range(0f, 1f), Tooltip("额外采集奖励概率 - 炎帝部族天赋")]
+    [Header("炎帝天赋 - 额外采集奖励概率")]
+    [Range(0f, 1f)]
     public float extraGatherRewardChance = 0f;
+
+    [Header("炎帝天赋 - 额外采集奖励倍率")]
+    [Range(1f, 10f)]
+    public float extraGatherRewardMultiplier = 1.0f;
 
     void Awake()
     {
@@ -39,15 +46,11 @@ public class PlayerStats : MonoBehaviour
 
     #region 体力相关方法
 
-    /// <summary>
-    /// 尝试消耗体力（带概率免扣功能）
-    /// 返回是否成功（包括免扣成功和扣体力成功）
-    /// </summary>
     public bool TryConsumeStamina(float amount)
     {
         if (selectedTribe == TribeType.HuangDi)
         {
-            float rand = UnityEngine.Random.Range(0f, 1f);
+            float rand = Random.Range(0f, 1f);
             if (rand < noStaminaMovementChance)
             {
                 Debug.Log($"免扣体力触发，随机值={rand:F2} < 概率={noStaminaMovementChance}");
@@ -83,16 +86,6 @@ public class PlayerStats : MonoBehaviour
         currentStamina = Mathf.Clamp(value, 0f, maxStamina);
     }
 
-    /// <summary>
-    /// 设置部族信息（由 TribeSystem 调用）
-    /// </summary>
-    public void SetTribeInfo(TribeType tribeType, float moveChance, float gatherChance)
-    {
-        selectedTribe = tribeType;
-        noStaminaMovementChance = moveChance;
-        extraGatherRewardChance = gatherChance;
-    }
-
     #endregion
 
     #region 属性相关
@@ -114,12 +107,6 @@ public class PlayerStats : MonoBehaviour
 
     #endregion
 
-    #region 社交与事件概率等（略，保持不变）
-
-    // ... 你之前的社交和事件代码保持不变 ...
-
-    #endregion
-
     #region 部族相关方法（供 TribeSystem 调用）
 
     public bool HasSelectedTribe()
@@ -136,16 +123,16 @@ public class PlayerStats : MonoBehaviour
             case TribeType.HuangDi:
                 maxStamina += defaultHuangDiStaminaBonus;
                 currentStamina += defaultHuangDiStaminaBonus;
-
                 if (noStaminaMovementChance <= 0f)
                     noStaminaMovementChance = defaultHuangDiNoStaminaChance;
                 break;
 
             case TribeType.YanDi:
                 perception += defaultYanDiPerceptionBonus;
-
                 if (extraGatherRewardChance <= 0f)
                     extraGatherRewardChance = defaultYanDiExtraRewardChance;
+                if (extraGatherRewardMultiplier <= 1f)
+                    extraGatherRewardMultiplier = defaultYanDiExtraRewardMultiplier;
                 break;
 
             case TribeType.ChiYou:
@@ -163,6 +150,7 @@ public class PlayerStats : MonoBehaviour
         selectedTribe = TribeType.None;
         noStaminaMovementChance = 0f;
         extraGatherRewardChance = 0f;
+        extraGatherRewardMultiplier = 1f;
     }
 
     #endregion

@@ -17,6 +17,12 @@ public class PlayerController : MonoBehaviour
 
     private float distanceSinceLastStaminaLoss = 0f;
 
+    [Header("移动事件触发配置")]
+    [Range(0f, 1f)]
+    public float eventTriggerProbability = 0.1f;  // 事件触发概率，0.1 = 10%
+    private float distanceSinceLastEventCheck = 0f;
+    public float eventCheckInterval = 1f;        // 每走多少米检测一次事件触发
+
     void Start()
     {
         seeker = GetComponent<Seeker>();
@@ -65,13 +71,12 @@ public class PlayerController : MonoBehaviour
         Vector2 nextPosition = rb.position + velocity;
 
         float distanceMoved = Vector2.Distance(rb.position, nextPosition);
-        distanceSinceLastStaminaLoss += distanceMoved;
 
+        // 体力消耗逻辑
+        distanceSinceLastStaminaLoss += distanceMoved;
         if (distanceSinceLastStaminaLoss >= 1f)
         {
             int wholeUnits = Mathf.FloorToInt(distanceSinceLastStaminaLoss);
-
-            // 每1点体力独立判定概率免扣
             for (int i = 0; i < wholeUnits; i++)
             {
                 bool success = stats.TryConsumeStamina(1f);
@@ -82,8 +87,19 @@ public class PlayerController : MonoBehaviour
                     return;
                 }
             }
-
             distanceSinceLastStaminaLoss -= wholeUnits;
+        }
+
+        // 新增：事件触发判定
+        distanceSinceLastEventCheck += distanceMoved;
+        if (distanceSinceLastEventCheck >= eventCheckInterval)
+        {
+            distanceSinceLastEventCheck = 0f;
+
+            if (Random.value <= eventTriggerProbability)
+            {
+                TriggerMoveEvent();
+            }
         }
 
         rb.MovePosition(nextPosition);
@@ -123,5 +139,12 @@ public class PlayerController : MonoBehaviour
 #else
         return false;
 #endif
+    }
+
+    // 新增：触发移动事件的函数，替换这里的逻辑为你自己的事件系统调用
+    private void TriggerMoveEvent()
+    {
+        Debug.Log("移动事件触发了！");
+        // TODO: 触发实际事件，比如通知事件管理器、播放提示、产生掉落等
     }
 }

@@ -735,7 +735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc750010f98ab74d9f433b4e7cecb87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceName: "\u672A\u77E5\u8D44\u6E90"
+  resourceType: 1
+  resourceId: 0
 --- !u!1 &318584956
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,7 +1060,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c317e9b22589e9e48b704ddc7ffc7f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chestId: 1
+  chestType: 1
+  chestId: 0
 --- !u!1 &339644748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &339644749
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1952,10 +1954,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u5F53\u524D\u77FF\u8109\u4E3A\u7389\u77F3\u77FF\uFF0C\u662F\u5426\u6D88\u80171\u70B9\u4F53\u529B\u8FDB\u884C\u91C7\u96C6\uFF1F"
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 77ed4b5394c8e7846a2c78f3475557e2, type: 2}
-  m_sharedMaterial: {fileID: 8723450383013733714, guid: 77ed4b5394c8e7846a2c78f3475557e2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 01525aae346f7fc4f90c15c16a43bc4c, type: 2}
+  m_sharedMaterial: {fileID: -8582995292720086664, guid: 01525aae346f7fc4f90c15c16a43bc4c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2209,6 +2211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemTableFileName: item.json
   chestTableFileName: chest.json
+  resourceTableFileName: resource.json
 --- !u!1 &671782726
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,6 +2812,7 @@ GameObject:
   - component: {fileID: 926583677}
   - component: {fileID: 926583678}
   - component: {fileID: 926583679}
+  - component: {fileID: 926583680}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2923,6 +2927,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 4
+  eventTriggerProbability: 0.1
+  eventCheckInterval: 1
 --- !u!114 &926583677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3008,10 +3014,26 @@ MonoBehaviour:
   defaultHuangDiNoStaminaChance: 0.5
   defaultYanDiPerceptionBonus: 5
   defaultYanDiExtraRewardChance: 0.2
+  defaultYanDiExtraRewardMultiplier: 1.2
   defaultChiYouSpiritualityBonus: 5
   selectedTribe: 0
   noStaminaMovementChance: 0
   extraGatherRewardChance: 0
+  extraGatherRewardMultiplier: 10
+--- !u!114 &926583680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926583670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 630f12f962f198d469d2b408b2b2036c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerProbability: 0.1
+  checkIntervalDistance: 1
 --- !u!1 &950057085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3689,7 +3711,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc750010f98ab74d9f433b4e7cecb87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resourceName: "\u672A\u77E5\u8D44\u6E90"
+  resourceType: 2
+  resourceId: 0
+--- !u!1 &1144420777
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1144420778}
+  m_Layer: 0
+  m_Name: Event
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1144420778
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144420777}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1163302479
 GameObject:
   m_ObjectHideFlags: 0
@@ -4579,7 +4633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c317e9b22589e9e48b704ddc7ffc7f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chestId: 2
+  chestType: 2
+  chestId: 0
 --- !u!1 &1337703251
 GameObject:
   m_ObjectHideFlags: 0
@@ -5127,7 +5182,7 @@ MonoBehaviour:
   hintCanvasGroup: {fileID: 821065495}
   hintText: {fileID: 1872853411}
   fadeDuration: 0.2
-  defaultHintDuration: 0.5
+  defaultHintDuration: 1
 --- !u!4 &1616096269
 Transform:
   m_ObjectHideFlags: 0
@@ -14353,3 +14408,4 @@ SceneRoots:
   - {fileID: 1029707122}
   - {fileID: 813387962}
   - {fileID: 1781731009}
+  - {fileID: 1144420778}

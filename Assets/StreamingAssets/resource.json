@@ -1,0 +1,38 @@
+[
+  {
+    "resource_id": 1001,
+    "resource_type": 1,
+    "item_types": "[[2,2001]]",
+    "weights": "[1]",
+    "amount_range": "[[1,100]]",
+    "resource_type_name": "玉石矿",
+    "stamina_cost": 1
+  },
+  {
+    "resource_id": 1002,
+    "resource_type": 1,
+    "item_types": "[[2,2002]]",
+    "weights": "[1]",
+    "amount_range": "[[1,100]]",
+    "resource_type_name": "青铜矿",
+    "stamina_cost": 1
+  },
+  {
+    "resource_id": 2001,
+    "resource_type": 2,
+    "item_types": "[[3,3001]]",
+    "weights": "[1]",
+    "amount_range": "[[1,100]]",
+    "resource_type_name": "富草点",
+    "stamina_cost": 1
+  },
+  {
+    "resource_id": 2002,
+    "resource_type": 2,
+    "item_types": "[[3,3002]]",
+    "weights": "[1]",
+    "amount_range": "[[1,100]]",
+    "resource_type_name": "杂草点",
+    "stamina_cost": 1
+  }
+]
