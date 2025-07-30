@@ -1,5 +1,5 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.UI; // 引入 Unity UI 的命名空间
 using System;
 
 public class UIConfirmManager : MonoBehaviour
@@ -8,7 +8,7 @@ public class UIConfirmManager : MonoBehaviour
 
 	[Header("UI 元素")]
 	public CanvasGroup confirmCanvasGroup;
-	public TextMeshProUGUI messageText;
+	public Text messageText; // 将 TextMeshProUGUI 改为 Text
 	public UnityEngine.UI.Button confirmButton;
 	public UnityEngine.UI.Button cancelButton;
 
@@ -34,7 +34,7 @@ public class UIConfirmManager : MonoBehaviour
 
 	public void ShowConfirm(string message, Action onConfirm, Action onCancel)
 	{
-		messageText.text = message;
+		messageText.text = message; // 使用普通 Text 来设置消息
 		confirmCallback = onConfirm;
 		cancelCallback = onCancel;
 

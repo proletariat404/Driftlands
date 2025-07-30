@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI; // 添加这个命名空间
 using System.Collections;
-using System.IO;
 
 public class UIHintManager : MonoBehaviour
 {
@@ -9,7 +9,8 @@ public class UIHintManager : MonoBehaviour
 
 	[Header("UI 元素")]
 	public CanvasGroup hintCanvasGroup;
-	public TextMeshProUGUI hintText;
+	public Text hintText; // 改为 Text 类型
+	public TextMeshProUGUI tmpHintText; // 新增 TextMeshProUGUI 引用
 	public float fadeDuration = 0.2f;
 
 	[Header("提示默认持续时间（秒）")]
@@ -31,7 +32,6 @@ public class UIHintManager : MonoBehaviour
 		hintCanvasGroup.blocksRaycasts = false;
 	}
 
-	// 调用时不传时间，使用默认持续时间
 	public void ShowHint(string message)
 	{
 		ShowHint(message, defaultHintDuration);
@@ -51,7 +51,11 @@ public class UIHintManager : MonoBehaviour
 		if (GameInputManager.Instance != null)
 			GameInputManager.Instance.DisableInput();
 
-		hintText.text = message;
+		// 设置文本
+		if (tmpHintText != null)
+			tmpHintText.text = message;
+		else if (hintText != null)
+			hintText.text = message;
 
 		// 淡入
 		yield return StartCoroutine(FadeCanvasGroup(hintCanvasGroup, 0f, 1f, fadeDuration));
@@ -77,42 +81,5 @@ public class UIHintManager : MonoBehaviour
 			yield return null;
 		}
 		cg.alpha = to;
-	}
-
-	// 读取并显示提示文本示例（可删）
-	public void LoadHintData(string fileName)
-	{
-		string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
-
-		if (File.Exists(filePath))
-		{
-			string jsonContent = File.ReadAllText(filePath);
-			HintData[] hintDataArray = JsonUtility.FromJson<HintDataArray>(jsonContent).hints;
-
-			if (hintDataArray.Length > 0)
-			{
-				ShowHint(hintDataArray[0].HintText, hintDataArray[0].Duration);
-			}
-		}
-		else
-		{
-			Debug.LogError($"File not found: {filePath}");
-		}
-	}
-
-	[System.Serializable]
-	public class HintDataArray
-	{
-		public HintData[] hints;
-	}
-
-	[System.Serializable]
-	public class HintData
-	{
-		public int ID;
-		public string HintText;
-		public float Duration;
-		public int Type;
-		public string Column4;
 	}
 }
