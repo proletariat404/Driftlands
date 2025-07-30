@@ -1080,7 +1080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &339644749
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3033,10 +3033,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630f12f962f198d469d2b408b2b2036c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerProbability: 0.1
-  lastPosition: {x: 0, y: 0, z: 0}
-  distanceMovedSinceLastCheck: 0
-  checkIntervalDistance: 1
 --- !u!1 &950057085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3725,8 +3721,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1144420778}
+  - component: {fileID: 1144420779}
   m_Layer: 0
-  m_Name: Event
+  m_Name: RandomEventManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3747,6 +3744,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1144420779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144420777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96417fbf36d0f4842b279fcbb7c781f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventUI: {fileID: 1633374739}
 --- !u!1 &1163302479
 GameObject:
   m_ObjectHideFlags: 0
@@ -14549,8 +14559,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8ac8612a0c50d484f8ddc57c01615074, type: 2}
-  m_sharedMaterial: {fileID: 755532066579006126, guid: 8ac8612a0c50d484f8ddc57c01615074, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b73d76ee0f607914c8b2141bf620af32, type: 2}
+  m_sharedMaterial: {fileID: -7106517506709872744, guid: b73d76ee0f607914c8b2141bf620af32, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

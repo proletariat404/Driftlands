@@ -4,60 +4,54 @@
     "event_type_id": 1,
     "event_type_text": "吉星高照",
     "event_text": "你发现一袋金子！",
-    "reward_item_id": 1,
+    "reward_item_id": 1001,
     "reward_amount": 50,
-    "penalty_id": "",
-    "Column7": ""
+    "penalty_id": ""
   },
   {
     "event_id": 1002,
     "event_type_id": 1,
     "event_type_text": "吉星高照",
     "event_text": "你发现一大袋金子！",
-    "reward_item_id": 1,
+    "reward_item_id": 1001,
     "reward_amount": 100,
-    "penalty_id": "",
-    "Column7": ""
+    "penalty_id": ""
   },
   {
     "event_id": 2001,
     "event_type_id": 2,
     "event_type_text": "小有福气",
     "event_text": "身手敏捷躲过了陷阱",
-    "reward_item_id": 1,
+    "reward_item_id": 1001,
     "reward_amount": 30,
-    "penalty_id": "",
-    "Column7": ""
+    "penalty_id": ""
   },
   {
     "event_id": 2002,
     "event_type_id": 2,
     "event_type_text": "小有福气",
     "event_text": "差点落入异兽群",
-    "reward_item_id": 1,
+    "reward_item_id": 1001,
     "reward_amount": 30,
-    "penalty_id": "",
-    "Column7": ""
+    "penalty_id": ""
   },
   {
     "event_id": 3001,
     "event_type_id": 3,
     "event_type_text": "普通",
     "event_text": "阳关似乎没那么强烈了",
-    "reward_item_id": 1,
+    "reward_item_id": 1001,
     "reward_amount": 10,
-    "penalty_id": "",
-    "Column7": ""
+    "penalty_id": ""
   },
   {
     "event_id": 3002,
     "event_type_id": 3,
     "event_type_text": "普通",
     "event_text": "感觉天气很凉爽",
-    "reward_item_id": 1,
+    "reward_item_id": 1001,
     "reward_amount": 10,
-    "penalty_id": "",
-    "Column7": ""
+    "penalty_id": ""
   },
   {
     "event_id": 4001,
@@ -66,8 +60,7 @@
     "event_text": "你摔了一跤",
     "reward_item_id": 1,
     "reward_amount": 0.0,
-    "penalty_id": "",
-    "Column7": ""
+    "penalty_id": ""
   },
   {
     "event_id": 4002,
@@ -76,7 +69,6 @@
     "event_text": "你吃了一个坏掉的果子",
     "reward_item_id": 1,
     "reward_amount": 0.0,
-    "penalty_id": "",
-    "Column7": ""
+    "penalty_id": ""
   }
 ]
