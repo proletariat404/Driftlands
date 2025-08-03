@@ -1,0 +1,90 @@
+[
+  {
+    "event_id": 1001,
+    "behavior_id": 1,
+    "display_text": "战斗",
+    "rate": 0.0,
+    "sort_order": 1,
+    "condition": "",
+    "reward_id": "[[1001,1]]",
+    "extra_reward_id": "",
+    "penalty_id": ""
+  },
+  {
+    "event_id": 1001,
+    "behavior_id": 2,
+    "display_text": "说服",
+    "rate": 0.2,
+    "sort_order": 2,
+    "condition": "",
+    "reward_id": "[[1001,1]]",
+    "extra_reward_id": "[[2001,1]]",
+    "penalty_id": "攻击+30%"
+  },
+  {
+    "event_id": 1001,
+    "behavior_id": 3,
+    "display_text": "欺诈",
+    "rate": 0.1,
+    "sort_order": 3,
+    "condition": "",
+    "reward_id": "[[1001,1]]",
+    "extra_reward_id": "[[2002,1]]",
+    "penalty_id": "攻击+30%，防御+30%"
+  },
+  {
+    "event_id": 1001,
+    "behavior_id": 4,
+    "display_text": "恐吓",
+    "rate": 0.01,
+    "sort_order": 4,
+    "condition": "",
+    "reward_id": "[[1001,1]]",
+    "extra_reward_id": "[[2003,1]]",
+    "penalty_id": "攻击+30%，防御+30%，伤害+50%"
+  },
+  {
+    "event_id": 1002,
+    "behavior_id": 1,
+    "display_text": "战斗",
+    "rate": 0.0,
+    "sort_order": 1,
+    "condition": "",
+    "reward_id": "[[1001,1]]",
+    "extra_reward_id": "",
+    "penalty_id": ""
+  },
+  {
+    "event_id": 1002,
+    "behavior_id": 2,
+    "display_text": "说服",
+    "rate": 0.2,
+    "sort_order": 2,
+    "condition": "require:chiyou",
+    "reward_id": "[[1001,1]]",
+    "extra_reward_id": "[[2001,1]]",
+    "penalty_id": "攻击+30%"
+  },
+  {
+    "event_id": 1002,
+    "behavior_id": 3,
+    "display_text": "欺诈",
+    "rate": 0.1,
+    "sort_order": 3,
+    "condition": "require:chiyou",
+    "reward_id": "[[1001,1]]",
+    "extra_reward_id": "[[2002,1]]",
+    "penalty_id": "攻击+30%，防御+30%"
+  },
+  {
+    "event_id": 1002,
+    "behavior_id": 4,
+    "display_text": "恐吓",
+    "rate": 0.01,
+    "sort_order": 4,
+    "condition": "require:chiyou",
+    "reward_id": "[[1001,1]]",
+    "extra_reward_id": "[[2003,1]]",
+    "penalty_id": "攻击+30%，防御+30%，伤害+50%"
+  }
+]

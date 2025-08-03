@@ -1,0 +1,16 @@
+[
+  {
+    "event_id": 1001,
+    "event_type": 1,
+    "target_type": 1,
+    "title": "遇到山贼",
+    "description": "闪出一伙山贼：此路是我开"
+  },
+  {
+    "event_id": 1002,
+    "event_type": 1,
+    "target_type": 2,
+    "title": "遇到异兽",
+    "description": "被异兽挡住了去路"
+  }
+]

@@ -104,12 +104,31 @@ public class PlayerStats : MonoBehaviour
     {
         return luck;
     }
+	public static bool HasTrait(string traitId)
+	{
+		var player = FindObjectOfType<PlayerStats>();
+		if (player == null) return false;
 
-    #endregion
+		switch (traitId.ToLower())
+		{
+			case "chiyou":
+				return player.selectedTribe == TribeType.ChiYou;
+			case "huangdi":
+				return player.selectedTribe == TribeType.HuangDi;
+			case "yandi":
+				return player.selectedTribe == TribeType.YanDi;
+			default:
+				Debug.LogWarning($"未知 traitId: {traitId}");
+				return false;
+		}
+	}
 
-    #region 部族相关方法（供 TribeSystem 调用）
 
-    public bool HasSelectedTribe()
+	#endregion
+
+	#region 部族相关方法（供 TribeSystem 调用）
+
+	public bool HasSelectedTribe()
     {
         return selectedTribe != TribeType.None;
     }
