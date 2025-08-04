@@ -1,109 +1,149 @@
-using System;
+Ôªøusing System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class GameEventUI : MonoBehaviour
 {
-	public static GameEventUI Instance { get; private set; }
+    public static GameEventUI Instance { get; private set; }
 
-	[Header("UI Elements")]
-	public GameObject panel;
-	public Text titleText;
-	public Text descriptionText;
-	public Transform buttonContainer;
-	public GameObject optionButtonPrefab;
+    [Header("UI Elements")]
+    public GameObject panel;
+    public Text titleText;
+    public Text descriptionText;
+    public Text resultText;               // ÁªìÊûúÊñáÊú¨UIÔºåËÆ∞ÂæóÂú∫ÊôØÂÖ≥ËÅî
+    public Transform buttonContainer;
+    public GameObject optionButtonPrefab;
 
-	public Action<EventBehaviorDatabase.BehaviorData> onBehaviorSelected;
+    public Action<EventBehaviorDatabase.BehaviorData> onBehaviorSelected;
 
-	private PlayerStats playerStats;
-	private GameEventBehaviorHandler behaviorHandler;
+    private PlayerStats playerStats;
+    private GameEventBehaviorHandler behaviorHandler;
 
-	private void Awake()
-	{
-		if (Instance != null)
-		{
-			Destroy(gameObject);
-			return;
-		}
-		Instance = this;
-		panel.SetActive(false);
+    private void Awake()
+    {
+        if (Instance != null)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        panel.SetActive(false);
 
-		playerStats = FindObjectOfType<PlayerStats>();
+        playerStats = FindObjectOfType<PlayerStats>();
 
-		// ’“µΩªÚ¥¥Ω®––Œ™¥¶¿Ì∆˜
-		behaviorHandler = FindObjectOfType<GameEventBehaviorHandler>();
-		if (behaviorHandler == null)
-		{
-			GameObject handlerObj = new GameObject("GameEventBehaviorHandler");
-			behaviorHandler = handlerObj.AddComponent<GameEventBehaviorHandler>();
-		}
-	}
+        behaviorHandler = FindObjectOfType<GameEventBehaviorHandler>();
+        if (behaviorHandler == null)
+        {
+            GameObject handlerObj = new GameObject("GameEventBehaviorHandler");
+            behaviorHandler = handlerObj.AddComponent<GameEventBehaviorHandler>();
+        }
+    }
 
-	public void Show(GameEventsDatabase.GameEventData data, EventBehaviorDatabase eventBehaviorDb)
-	{
-		panel.SetActive(true);
-		ClearButtons();
+    public void Show(GameEventsDatabase.GameEventData data, EventBehaviorDatabase eventBehaviorDb)
+    {
+        panel.SetActive(true);
+        ClearButtons();
 
-		titleText.text = data.title;
-		descriptionText.text = data.description;
+        titleText.text = data.title;
+        descriptionText.text = data.description;
+        descriptionText.gameObject.SetActive(true);
+        resultText.gameObject.SetActive(false);
+        buttonContainer.gameObject.SetActive(true);
 
-		var behaviors = eventBehaviorDb.GetBehaviorsByEventId(data.event_id);
-		foreach (var behavior in behaviors)
-		{
-			if (!ConditionChecker.IsConditionMet(behavior.condition))
-				continue;
+        var behaviors = eventBehaviorDb.GetBehaviorsByEventId(data.event_id);
+        foreach (var behavior in behaviors)
+        {
+            if (!ConditionChecker.IsConditionMet(behavior.condition))
+                continue;
 
-			GameObject btnObj = Instantiate(optionButtonPrefab, buttonContainer);
-			var btn = btnObj.GetComponent<Button>();
-			var txt = btnObj.GetComponentInChildren<Text>();
+            GameObject btnObj = Instantiate(optionButtonPrefab, buttonContainer);
+            var btn = btnObj.GetComponent<Button>();
+            var txt = btnObj.GetComponentInChildren<Text>();
 
-			if (behavior.display_text == "’Ω∂∑")
-			{
-				txt.text = behavior.display_text;
-			}
-			else
-			{
-				float spiritualityBonus = playerStats != null ? playerStats.GetSpirituality() * 0.01f : 0f;
-				float finalRate = Mathf.Clamp01(behavior.rate + spiritualityBonus);
-				string rateStr = FormatRateWithColor(finalRate);
-				txt.text = $"{behavior.display_text} ({rateStr})";
-			}
+            float spiritualityBonus = playerStats != null ? playerStats.GetSpirituality() * 0.01f : 0f;
+            float finalRate = Mathf.Clamp01(behavior.rate + spiritualityBonus);
 
-			var behaviorCopy = behavior;
-			btn.onClick.AddListener(() =>
-			{
-				Hide();
+            if (behavior.display_text == "ÊàòÊñó")
+            {
+                txt.text = behavior.display_text;
+            }
+            else
+            {
+                string rateStr = FormatRateWithColor(finalRate);
+                txt.text = $"{behavior.display_text} ({rateStr})";
+            }
 
-				// ÷±Ω”¥¶¿Ì––Œ™£¨∂¯≤ª «Õ®π˝ ¬º˛
-				behaviorHandler.ExecuteBehavior(behaviorCopy);
+            var behaviorCopy = behavior;
+            btn.onClick.AddListener(() =>
+            {
+                // ÂÖàÈöêËóèUIÊåâÈíÆÂíåÊèèËø∞ÊñáÊú¨ÔºåÂáÜÂ§áÊòæÁ§∫ÁªìÊûú
+                HideButtonsAndDescription();
 
-				// »Áπ˚”–∆‰À˚µÿ∑Ω–Ë“™º‡Ã˝£¨“≤ø…“‘¥•∑¢ ¬º˛
-				onBehaviorSelected?.Invoke(behaviorCopy);
-			});
-		}
-	}
+                if (behaviorCopy.display_text == "ÊàòÊñó")
+                {
+                    // ÊàòÊñóÈÄâÈ°πÁõ¥Êé•ÂÖ≥Èó≠Èù¢ÊùøÔºå‰∏çÊòæÁ§∫ÁªìÊûú
+                    behaviorHandler.ExecuteBehavior(behaviorCopy, 0f);
+                    Hide();
+                }
+                else
+                {
+                    // ‰º†ÈÄíËÆ°ÁÆóÂ•ΩÁöÑÊàêÂäüÁéáÊâßË°åË°å‰∏∫
+                    behaviorHandler.ExecuteBehavior(behaviorCopy, finalRate);
+                }
 
-	private string FormatRateWithColor(float rate)
-	{
-		string color;
-		if (rate >= 0.7f) color = "green";
-		else if (rate >= 0.4f) color = "yellow";
-		else color = "red";
-		return $"<color={color}>{(rate * 100f):F0}%</color>";
-	}
+                onBehaviorSelected?.Invoke(behaviorCopy);
+            });
+        }
+    }
 
-	public void Hide()
-	{
-		panel.SetActive(false);
-		ClearButtons();
-		onBehaviorSelected = null;
-	}
+    private string FormatRateWithColor(float rate)
+    {
+        string color;
+        if (rate >= 0.7f) color = "green";
+        else if (rate >= 0.4f) color = "yellow";
+        else color = "red";
 
-	private void ClearButtons()
-	{
-		foreach (Transform child in buttonContainer)
-		{
-			Destroy(child.gameObject);
-		}
-	}
+        return $"<color={color}>{(rate * 100f):F0}%</color>";
+    }
+
+    public void ShowResultText(string result)
+    {
+        if (resultText == null)
+        {
+            Debug.LogWarning("Êú™ËÆæÁΩÆ resultText UI ÊñáÊú¨ÁªÑ‰ª∂");
+            return;
+        }
+        resultText.text = result;
+        resultText.gameObject.SetActive(true);
+    }
+
+    private void HideButtonsAndDescription()
+    {
+        buttonContainer.gameObject.SetActive(false);
+        descriptionText.gameObject.SetActive(false);
+    }
+
+    public void Hide()
+    {
+        panel.SetActive(false);
+        ClearButtons();
+        onBehaviorSelected = null;
+
+        if (resultText != null)
+            resultText.gameObject.SetActive(false);
+
+        if (descriptionText != null)
+            descriptionText.gameObject.SetActive(true);
+
+        if (buttonContainer != null)
+            buttonContainer.gameObject.SetActive(true);
+    }
+
+    private void ClearButtons()
+    {
+        foreach (Transform child in buttonContainer)
+        {
+            Destroy(child.gameObject);
+        }
+    }
 }

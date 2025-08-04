@@ -105,6 +105,12 @@ public class ItemDatabase
             return $"ItemData(ID:{item_id}, Name:{item_name}, Type:{type_name})";
         }
     }
+    public string GetItemName(int itemId)
+    {
+        var item = GetItemById(itemId);
+        return item != null ? item.item_name : $"Î´ÖªÎïÆ·({itemId})";
+    }
+
 
     [System.Serializable]
     private class ItemList

@@ -113,16 +113,19 @@ public class GameEventsDatabase
 	private class GameEventList { public List<GameEventData> events; }
 
 	[Serializable]
-	private class BehaviorData
-	{
-		public int event_id;
-		public int behavior_id;
-		public string display_text;
-		public float rate;
-		public int sort_order;
-		public string condition;
-	}
+    private class BehaviorData
+    {
+        public int event_id;
+        public int behavior_id;
+        public string display_text;
+        public float rate;
+        public int sort_order;
+        public string condition;
+        public string reward_id;        // 添加
+        public string extra_reward_id;  // 添加（如果需要）
+        public string penalty_id;       // 添加
+    }
 
-	[Serializable]
+    [Serializable]
 	private class BehaviorList { public List<BehaviorData> behaviors; }
 }

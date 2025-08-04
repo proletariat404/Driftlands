@@ -1,152 +1,168 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Driftlands\\",
+  "WorkspaceRootPath": "E:\\Dream\\Driftlands\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\common\\dropmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\dropmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|e:\\dream\\driftlands\\assets\\scripts\\ui\\gameeventui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\gameeventui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\events\\randomeventsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\randomeventsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|e:\\dream\\driftlands\\assets\\scripts\\events\\fixedeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\fixedeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\data\\itemdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\itemdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|d:\\driftlands\\assets\\scripts\\data\\randomeventsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\randomeventsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\data\\randomeventsweightdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\randomeventsweightdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\hiddenitem\\collectableresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hiddenitem\\collectableresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\ui\\randomeventui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\randomeventui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\ui\\tribeselectionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\tribeselectionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\ui\\uiconfirmmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uiconfirmmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\ui\\uihintmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uihintmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\hiddenitem\\treasurechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hiddenitem\\treasurechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\data\\gamedatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\data\\gamedatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\gamedatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Data\\EventData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|e:\\dream\\driftlands\\assets\\scripts\\events\\gameeventbehaviorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\gameeventbehaviorhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventTypeData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Data\\EventTypeData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\hiddenitem\\collectableresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hiddenitem\\collectableresource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\data\\chestdropdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\chestdropdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\data\\resourcedropdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\resourcedropdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\common\\mapeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\mapeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\hiddenitem\\hiddenitemevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\hiddenitem\\hiddenitemevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hiddenitem\\hiddenitemevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\player\\tribesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|e:\\dream\\driftlands\\assets\\scripts\\data\\eventbehaviordatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\eventbehaviordatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|e:\\dream\\driftlands\\assets\\scripts\\events\\conditionchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\conditionchecker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\data\\itemdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\itemdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\events\\randomeventsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\randomeventsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\events\\randomeventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\randomeventmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\ui\\uihintmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uihintmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerstats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\ui\\randomeventui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\randomeventui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|e:\\dream\\driftlands\\assets\\scripts\\data\\gameeventsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\gameeventsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\data\\randomeventsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\randomeventsdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\ui\\tribeselectionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\tribeselectionui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\data\\randomeventsweightdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\randomeventsweightdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\common\\dropmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\dropmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\hiddenitem\\treasurechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hiddenitem\\treasurechest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventTypeData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\data\\chestdropdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\chestdropdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\data\\resourcedropdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\resourcedropdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\common\\mapeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\mapeventtrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\player\\tribesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\tribesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\data\\hiddenhintdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\data\\hiddenhintdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\hiddenhintdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\common\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\common\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\interactable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Editor\\ExcelToCsvWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Editor\\ExcelToCsvWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Editor\\ExcelToCsvWindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|D:\\Driftlands\\assets\\scripts\\camera\\tilemapboundsfixer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|E:\\Dream\\Driftlands\\assets\\scripts\\camera\\tilemapboundsfixer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{68C33E5B-8401-70CB-E749-6D29DA5F2FA4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\tilemapboundsfixer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Manage\\IntegratedLayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Manage\\IntegratedLayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Manage\\IntegratedLayerController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Manage\\LayerControlledGridManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridGraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Manage\\LayerControlledGridGraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridGraph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CE1E45-5A11-FA9D-77F2-BAA816F465E6}|AstarPathfindingProject.csproj|D:\\Driftlands\\assets\\astarpathfindingproject\\core\\astarmath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4CE1E45-5A11-FA9D-77F2-BAA816F465E6}|AstarPathfindingProject.csproj|E:\\Dream\\Driftlands\\assets\\astarpathfindingproject\\core\\astarmath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4CE1E45-5A11-FA9D-77F2-BAA816F465E6}|AstarPathfindingProject.csproj|solutionrelative:assets\\astarpathfindingproject\\core\\astarmath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4CE1E45-5A11-FA9D-77F2-BAA816F465E6}|AstarPathfindingProject.csproj|D:\\Driftlands\\assets\\astarpathfindingproject\\core\\astarpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C4CE1E45-5A11-FA9D-77F2-BAA816F465E6}|AstarPathfindingProject.csproj|E:\\Dream\\Driftlands\\assets\\astarpathfindingproject\\core\\astarpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4CE1E45-5A11-FA9D-77F2-BAA816F465E6}|AstarPathfindingProject.csproj|solutionrelative:assets\\astarpathfindingproject\\core\\astarpath.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\TreasureChest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\TreasureChest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Common\\TreasureChest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventDataManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Data\\EventDataManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventDataManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Data\\EventDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventTypeDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Data\\EventTypeDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Driftlands\\Assets\\Scripts\\Data\\EventTypeDatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\MoveBasedEventTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\MoveBasedEventTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Events\\MoveBasedEventTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -156,71 +172,197 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RandomEventSystem.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Events\\RandomEventSystem.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\RandomEventSystem.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Events\\RandomEventSystem.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Events\\RandomEventSystem.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAUwGMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "EventBehaviorDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\EventBehaviorDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\EventBehaviorDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\EventBehaviorDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\EventBehaviorDatabase.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAQwGQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T17:14:57.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RandomEventsWeightDatabase.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\RandomEventsWeightDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\RandomEventsWeightDatabase.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\RandomEventsWeightDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\RandomEventsWeightDatabase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T15:04:08.64Z",
+              "WhenOpened": "2025-08-03T17:58:01.904Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "GameEventBehaviorHandler.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\GameEventBehaviorHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\GameEventBehaviorHandler.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\GameEventBehaviorHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\GameEventBehaviorHandler.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAQwE0AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T17:03:28.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameEventUI.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\UI\\GameEventUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\GameEventUI.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\UI\\GameEventUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\GameEventUI.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAQwFoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T12:14:13.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ItemDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ItemDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\ItemDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ItemDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\ItemDatabase.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAQwHEAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T07:10:49.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FixedEventTrigger.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\FixedEventTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\FixedEventTrigger.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\FixedEventTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\FixedEventTrigger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T16:51:29.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConditionChecker.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\ConditionChecker.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\ConditionChecker.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\ConditionChecker.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\ConditionChecker.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T17:03:21.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HiddenItemEvent.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\HiddenItemEvent.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HiddenItem\\HiddenItemEvent.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\HiddenItemEvent.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HiddenItem\\HiddenItemEvent.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T06:44:57.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CollectableResource.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\CollectableResource.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HiddenItem\\CollectableResource.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\CollectableResource.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HiddenItem\\CollectableResource.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T03:22:09.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameDataManager.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\GameDataManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\GameDataManager.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\GameDataManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\GameDataManager.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAQwCoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T07:04:02.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RandomEventManager.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\RandomEventManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\RandomEventManager.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\RandomEventManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\RandomEventManager.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAQwJMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T08:19:37.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "PlayerController.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Player\\PlayerController.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerController.cs",
-              "ViewState": "AgIAAMgAAAAAAAAAAAAAANYAAABaAAAAAAAAAA==",
+              "ViewState": "AQIAAMwAAAAAAAAAAAAQwPwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T06:46:30.038Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RandomEventsDatabase.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\RandomEventsDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\RandomEventsDatabase.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\RandomEventsDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\RandomEventsDatabase.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAUwGUAAAARAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "UIHintManager.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\UI\\UIHintManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIHintManager.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\UI\\UIHintManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIHintManager.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T15:04:34.557Z",
+              "WhenOpened": "2025-07-25T09:13:22.782Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
+              "Title": "PlayerStats.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerStats.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStats.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\PlayerStats.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStats.cs",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAQwLAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T05:56:28.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RandomEventSystem.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\RandomEventSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\RandomEventSystem.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\RandomEventSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\RandomEventSystem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-29T17:14:57.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "TreasureChest.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
               "RelativeToolTip": "Assets\\Scripts\\HiddenItem\\TreasureChest.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAADwvyAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -228,126 +370,95 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UIHintManager.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\UI\\UIHintManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIHintManager.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\UI\\UIHintManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\UIHintManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "RandomEventsDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\RandomEventsDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\RandomEventsDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\RandomEventsDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\RandomEventsDatabase.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAqwF8AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T09:13:22.782Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T15:04:34.557Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UIConfirmManager.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\UI\\UIConfirmManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIConfirmManager.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\UI\\UIConfirmManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\UIConfirmManager.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "RandomEventsWeightDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\RandomEventsWeightDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\RandomEventsWeightDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\RandomEventsWeightDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\RandomEventsWeightDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T15:57:51.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T15:04:08.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TribeSelectionUI.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\UI\\TribeSelectionUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\TribeSelectionUI.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\UI\\TribeSelectionUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UI\\TribeSelectionUI.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAqwKEAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T08:46:23.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "RandomEventUI.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\UI\\RandomEventUI.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\UI\\RandomEventUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\RandomEventUI.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\UI\\RandomEventUI.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\UI\\RandomEventUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\RandomEventUI.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAxwFMAAABLAAAAAAAAAA==",
+              "ViewState": "AQIAACEAAAAAAAAAAAAqwDYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T17:15:22.143Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ItemDatabase.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\ItemDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\ItemDatabase.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\ItemDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\ItemDatabase.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADgAAABdAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "GameEventsDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\GameEventsDatabase.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\GameEventsDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\GameEventsDatabase.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\GameEventsDatabase.cs",
+              "ViewState": "AQIAAGsAAAAAAAAAAAAqwHUAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T07:10:49.593Z",
+              "WhenOpened": "2025-08-02T17:31:20.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 17,
+              "Title": "TribeSelectionUI.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\UI\\TribeSelectionUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\TribeSelectionUI.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\UI\\TribeSelectionUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\TribeSelectionUI.cs",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAqwKgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-28T08:46:23.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "DropManager.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Common\\DropManager.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\DropManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\DropManager.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Common\\DropManager.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\DropManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Common\\DropManager.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAQwDEBAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T18:03:39.408Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-26T18:03:39.408Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CollectableResource.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\HiddenItem\\CollectableResource.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HiddenItem\\CollectableResource.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\HiddenItem\\CollectableResource.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HiddenItem\\CollectableResource.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAAwIYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T03:22:09.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "EventData.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\EventData.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\EventData.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAwAwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T10:40:07.817Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GameDataManager.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\GameDataManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\GameDataManager.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\GameDataManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\GameDataManager.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T07:04:02.916Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "ResourceDropDatabase.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\ResourceDropDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ResourceDropDatabase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\ResourceDropDatabase.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\ResourceDropDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ResourceDropDatabase.cs",
               "RelativeToolTip": "Assets\\Scripts\\Data\\ResourceDropDatabase.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAzwGEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -355,57 +466,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "EventTypeDatabase.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventTypeDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\EventTypeDatabase.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventTypeDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\EventTypeDatabase.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T10:01:10.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "EventDatabase.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventDatabase.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\EventDatabase.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventDatabase.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\EventDatabase.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAuwEEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T10:01:53.195Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "MoveBasedEventTrigger.cs",
               "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\MoveBasedEventTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\MoveBasedEventTrigger.cs",
               "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Events\\MoveBasedEventTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\MoveBasedEventTrigger.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAwCcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T10:28:41.14Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "EventTypeData.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventTypeData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\EventTypeData.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventTypeData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\EventTypeData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T10:40:27.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "MapEventTrigger.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Common\\MapEventTrigger.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\MapEventTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\MapEventTrigger.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Common\\MapEventTrigger.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\MapEventTrigger.cs",
               "RelativeToolTip": "Assets\\Scripts\\Common\\MapEventTrigger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -413,11 +520,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "ChestDropDatabase.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\ChestDropDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ChestDropDatabase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\ChestDropDatabase.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\ChestDropDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\ChestDropDatabase.cs",
               "RelativeToolTip": "Assets\\Scripts\\Data\\ChestDropDatabase.cs",
               "ViewState": "AgIAAFYAAAAAAAAAAADwv20AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -425,47 +532,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "HiddenItemEvent.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\HiddenItem\\HiddenItemEvent.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\HiddenItem\\HiddenItemEvent.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\HiddenItem\\HiddenItemEvent.cs",
-              "RelativeToolTip": "Assets\\Scripts\\HiddenItem\\HiddenItemEvent.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAqwFgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T06:44:57.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PlayerStats.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Player\\PlayerStats.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerStats.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Player\\PlayerStats.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerStats.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T05:56:28.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "EventDataManager.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventDataManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\EventDataManager.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\EventDataManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Data\\EventDataManager.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAwE8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-29T09:59:17.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "HiddenHintDatabase.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
               "RelativeToolTip": "Assets\\Scripts\\Data\\HiddenHintDatabase.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAIwBoAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -473,11 +554,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "Interactable.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Common\\Interactable.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\Interactable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Interactable.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Common\\Interactable.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\Interactable.cs",
               "RelativeToolTip": "Assets\\Scripts\\Common\\Interactable.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -485,23 +566,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "NavMeshSurface.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs",
-              "RelativeDocumentMoniker": "Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs",
-              "RelativeToolTip": "Assets\\NavMeshComponents\\Scripts\\NavMeshSurface.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAgwBYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T07:26:39.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "AstarPath.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
               "RelativeDocumentMoniker": "Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
               "RelativeToolTip": "Assets\\AstarPathfindingProject\\Core\\AstarPath.cs",
               "ViewState": "AgIAAPkHAAAAAAAAAADwv3MIAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -509,11 +588,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "AstarMath.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
               "RelativeDocumentMoniker": "Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
               "RelativeToolTip": "Assets\\AstarPathfindingProject\\Core\\AstarMath.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -521,11 +600,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "TribeSystem.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Player\\TribeSystem.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\TribeSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\TribeSystem.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Player\\TribeSystem.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Player\\TribeSystem.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\TribeSystem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -533,11 +612,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "TilemapBoundsFixer.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Camera\\TilemapBoundsFixer.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Camera\\TilemapBoundsFixer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\TilemapBoundsFixer.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Camera\\TilemapBoundsFixer.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Camera\\TilemapBoundsFixer.cs",
               "RelativeToolTip": "Assets\\Scripts\\Camera\\TilemapBoundsFixer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -545,54 +624,50 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "TreasureChest.cs",
               "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\TreasureChest.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\TreasureChest.cs",
               "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Common\\TreasureChest.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Common\\TreasureChest.cs",
               "ViewState": "AQIAAAUAAAAAAAAAAAAIwA8AAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T08:53:08.687Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "LayerControlledGridGraph.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridGraph.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Manage\\LayerControlledGridGraph.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridGraph.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Manage\\LayerControlledGridGraph.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T02:25:10.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "LayerControlledGridManager.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Manage\\LayerControlledGridManager.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Manage\\LayerControlledGridManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Manage\\LayerControlledGridManager.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T02:52:48.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "IntegratedLayerController.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Manage\\IntegratedLayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Manage\\IntegratedLayerController.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Manage\\IntegratedLayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Manage\\IntegratedLayerController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T03:01:57.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "CameraFollow.cs",
-              "DocumentMoniker": "D:\\Driftlands\\Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "DocumentMoniker": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Camera\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraFollow.cs",
-              "ToolTip": "D:\\Driftlands\\Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "ToolTip": "E:\\Dream\\Driftlands\\Assets\\Scripts\\Camera\\CameraFollow.cs",
               "RelativeToolTip": "Assets\\Scripts\\Camera\\CameraFollow.cs",
               "ViewState": "AgIAACUAAAAAAAAAAAAAwDAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -600,12 +675,10 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "ExcelToCsvWindow.cs",
               "DocumentMoniker": "D:\\Driftlands\\Assets\\Editor\\ExcelToCsvWindow.cs",
-              "RelativeDocumentMoniker": "Assets\\Editor\\ExcelToCsvWindow.cs",
               "ToolTip": "D:\\Driftlands\\Assets\\Editor\\ExcelToCsvWindow.cs",
-              "RelativeToolTip": "Assets\\Editor\\ExcelToCsvWindow.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-25T09:56:40.99Z"
             }
