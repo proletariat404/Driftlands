@@ -60,7 +60,7 @@ public class GameEventBehaviorHandler : MonoBehaviour
     private string BuildFailureText(EventBehaviorDatabase.BehaviorData behavior)
     {
         string penalty = string.IsNullOrEmpty(behavior.penalty_id) ? "失败，未造成影响。" : behavior.penalty_id;
-        return $"<color=red>{behavior.display_text}失败！</color> {penalty}";
+        return $"<color=red>{behavior.display_text}失败！敌人</color> {penalty}，被迫进入战斗！";
     }
 
     private void ApplyReward(string rewardId)

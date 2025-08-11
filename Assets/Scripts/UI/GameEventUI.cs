@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +16,7 @@ public class GameEventUI : MonoBehaviour
     public GameObject optionButtonPrefab;
 
     public Action<EventBehaviorDatabase.BehaviorData> onBehaviorSelected;
+    public Action onHide; // 新增事件，用于通知隐藏
 
     private PlayerStats playerStats;
     private GameEventBehaviorHandler behaviorHandler;
@@ -115,6 +117,15 @@ public class GameEventUI : MonoBehaviour
         }
         resultText.text = result;
         resultText.gameObject.SetActive(true);
+
+        // 启动协程，1秒后隐藏整个面板
+        StartCoroutine(AutoHideResult(1f));
+    }
+
+    private IEnumerator AutoHideResult(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Hide();
     }
 
     private void HideButtonsAndDescription()
@@ -137,6 +148,9 @@ public class GameEventUI : MonoBehaviour
 
         if (buttonContainer != null)
             buttonContainer.gameObject.SetActive(true);
+
+        // 触发隐藏事件，通知相关对象
+        onHide?.Invoke();
     }
 
     private void ClearButtons()
